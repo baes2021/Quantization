@@ -1,1 +1,3 @@
 # Quantization
+
+When you want to deploy your model in edge devices (like mobile, smart watch,…) you need to reduce the model size. Quantization is used to this purpose. It does reduction of model size by converting floating weights to integers/floating with lower bits -e.g., from float64 to int64 or float16 - (which reduces the memory storage considerably). The benefit of using quantization is that it reduces the model size and prediction is faster. Here I used handwritten digit dataset and implemented two methods of quantization: post quantization and quantization aware training. The quantization aware training requires more work but gives more accurate results. 
